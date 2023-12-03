@@ -5,7 +5,7 @@
 #include <sys/un.h>
 #include <unistd.h>
 
-#define SERVER_PATH "./sock_addr2" // as same as 3-c-main.c
+#define SERVER_PATH "./sock_addr" // as same as 1-s-main.c
 
 int main() {
     int sockfd;
