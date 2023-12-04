@@ -30,7 +30,7 @@ int main() {
         exit(EXIT_FAILURE);
     }
 
-    printf("Connected to the server.\n");
+    printf("[Info] Unix socket : connected to the server\n");
 
     // Read input from user and send to server
     while (1) {
@@ -48,7 +48,7 @@ int main() {
         }
 
         if (strcmp(buffer, "quit\n") == 0) {
-            printf("Terminate...\n");
+            printf("Terminate...\n: Success\n[Info] Closing socket\n");
             break;
         }
     }

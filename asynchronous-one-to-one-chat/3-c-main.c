@@ -35,6 +35,7 @@ int main() {
     unix_addr.sun_family = AF_UNIX;
     strcpy(unix_addr.sun_path, UNIX_SOCKET_PATH);
     len = strlen(unix_addr.sun_path) + sizeof(unix_addr.sun_family);
+    unlink(UNIX_SOCKET_PATH); // delete an existing socket file
 
     // bind
     if (bind(unix_sockfd, (struct sockaddr *)&unix_addr, len) < 0) {
@@ -111,9 +112,6 @@ int main() {
                     close(inet_sockfd);
                 }
                 inet_sockfd = -1;
-
-                printf("[Info] Closing socket\n");
-
                 break;
             }
         } 
@@ -129,7 +127,6 @@ int main() {
                 if (strcmp(buffer, "quit\n") == 0) {
                     close(inet_sockfd);
                     inet_sockfd = -1;
-                    printf("[Info] Closing socket\n");
                 }
             }
         }
@@ -142,8 +139,6 @@ int main() {
     if (new_unix_sockfd != -1) {
         close(new_unix_sockfd); 
     }
-
-    unlink(UNIX_SOCKET_PATH); // delete an existing socket file
 
     return 0;
 }
