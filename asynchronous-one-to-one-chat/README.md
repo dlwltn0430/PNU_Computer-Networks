@@ -12,11 +12,16 @@
         - 총 4개의 소스코드 개발
         - 총 4개의 터미널에서 실행
 
+
 2. 프로그램별 통신 방식
+   
 ![image](https://github.com/dlwltn0430/PNU_Computer-Networks/assets/101401447/f323f49f-81d0-422b-9ff9-f82f7d761be0)
 
+
 3. 프로그램 실행 순서
+   
 ![image](https://github.com/dlwltn0430/PNU_Computer-Networks/assets/101401447/a2b831a0-99fa-4d94-88ca-28462c759287)
+
 
 ### 구조
 ```
