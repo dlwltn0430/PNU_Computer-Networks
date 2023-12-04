@@ -13,8 +13,10 @@
         - 총 4개의 터미널에서 실행
 
 2. 프로그램별 통신 방식
+![image](https://github.com/dlwltn0430/PNU_Computer-Networks/assets/101401447/f323f49f-81d0-422b-9ff9-f82f7d761be0)
 
 3. 프로그램 실행 순서
+![image](https://github.com/dlwltn0430/PNU_Computer-Networks/assets/101401447/a2b831a0-99fa-4d94-88ca-28462c759287)
 
 ### 구조
 ```
@@ -51,11 +53,12 @@ gcc -o 4-c-input 4-c-input.c
 ./4-c-input
 ```
 
-### 실행 결과
+### 실행 화면
+![image](https://github.com/dlwltn0430/PNU_Computer-Networks/assets/101401447/3ccc82ae-0f2e-48bd-9e3f-6d999e16ab5c)
 
 ###  버전 기록
 |버전|설명|
 |--|--|
 |v1.0.0|- non-blocking 모드 설정 X <br /> - 테스트용으로 3-c-main.c와 4-c-input.c 동작만 확인|
 |v1.1.0|non-blocking 모드 설정 O|
-|v1.1.1|실행 순서 확인 위해 출력문 추가|
+|v1.1.1|- 실행 순서 확인 위해 출력문 추가 <br /> - unlink 위치 수정|
